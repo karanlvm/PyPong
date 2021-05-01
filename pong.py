@@ -124,3 +124,11 @@ while True:
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40):
          ball.setx(-340)
          ball.dx *=-1
+
+# AI Player ( Comment the following lines if you want to play multiplayer)
+
+    if paddle_b.ycor() <ball.ycor() and abs(paddle_b.ycor() - ball.ycor()) > 10:
+        paddle_b_up()
+
+    elif paddle_b.ycor() >ball.ycor() and abs(paddle_b.ycor() - ball.ycor()) > 10 :
+        paddle_b_down()
