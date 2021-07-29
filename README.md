@@ -1,4 +1,4 @@
-<h1> Pong </h1>
+<h1> PyPong </h1>
 
 <h3> The classic pong game made on Python </h3>
 
